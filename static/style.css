@@ -1,0 +1,82 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px; /* Espaçamento interno (opcional) */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre os itens (opcional) */
+}
+
+li {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+}
+
+main {
+    
+    font-family: Arial;
+    background-color: white;
+    padding: 80px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+img {
+    max-width: 200px;
+    max-height: 600px;
+}
+
+body {
+    background-image: url("https://www.nexdatacenter.com/wp-content/uploads/2015/04/the-importance-of-internet.jpg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+input {
+    padding: 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 83%;
+}
+
+h2 {
+    font-size: 40px;
+    color: deepskyblue;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+button {
+    background-color: darkgrey;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+button:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+    transition: linear 0.5ms;
+    color: black;
+}

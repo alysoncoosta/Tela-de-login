@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Tela de login</title>
+</head>
+<body>
+    
+
+    <main>
+        <h2>Seja bem-vindo</h2>
+        <h3>Faça o login</h3>
+        <form method="POST">
+            <input type="text" name="nome_ou_email" placeholder="Nome/E-mail">
+            <br><br>
+            <input type="password" name="senha" placeholder="Senha">
+            <br><br>
+            <button type="submit">Entrar</button>
+            <br><br>
+             <a href="{{ url_for('esqueci_senha') }}">Esqueceu a senha?</a> 
+        </form> 
+        {% if erro %}
+            <p style="color: red;">{{ erro }}</p>
+        {% endif %}
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
